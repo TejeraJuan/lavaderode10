@@ -6,42 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Ubicación</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div class="logo_container">
-            <img src="../img/logo.jpg" alt="logo">
-            <p><b>Lavadero de 10</b></p>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./ubicacion.html">Ubicación</a>
-                </li>
-                <li>
-                    <a href="./sobreNosotros.html">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <!-- ICONO -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logo.jpg" alt="logo" width="55">
+                    <span>Lavadero de 10</span>
+                </a>
+                <!-- BOTON DEL MENU -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- ELEMENTOS DEL MENU COLLAPSABLE -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreNosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </nav>
     </header>
-    <section class="ubicacion">
-        <section class="mapa-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.369524107876!2d-58.79917948520097!3d-34.4427665565058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9fc0ead82a79%3A0x583d9cda1c340868!2sLAVADERO%20DE%2010!5e0!3m2!1ses!2sar!4v1674853281693!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+    <main>
+        <section class="ubicacion">
+            <section class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.369524107876!2d-58.79917948520097!3d-34.4427665565058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9fc0ead82a79%3A0x583d9cda1c340868!2sLAVADERO%20DE%2010!5e0!3m2!1ses!2sar!4v1674853281693!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+            <article class="ubicacion-text">
+                <h4>Dirección</h4>
+                <p>Manuel Luis de Oliden 7882, Del Viso, Provincia de Buenos Aires</p>
+            </article>
         </section>
-        <div class="ubicacion-text">
-            <h4>Dirección</h4>
-            <p>Manuel Luis de Oliden 7882, Del Viso, Provincia de Buenos Aires</p>
-        </div>
-    </section>
+    </main>
+    <footer id="inicio_footer">
+        <section class="icons-container">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-instagram">Lavadero_de10</i></a></li>
+                <li><i class="fa-brands fa-whatsapp">11-1234-5678</i></li>
+                <li><i class="fa-brands fa-whatsapp">11-1234-5678</i></li>
+            </ul>
+        </section>
+        <section class="responsive_footer">
+            <p>
+                Lavadero de 10
+            </p>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -6,52 +6,14 @@
 /* Barra de navegacion */
 header{
     background-color: #20B2AA;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 75px;
-    width: 100%;
-    padding: 5px 40px;
 }
 
-.logo_container{
-    display: flex;
-    align-items: center;
-    margin-right: auto;
+.navbar-nav{
+    margin-right: 30px;
 }
-
-.logo_container p{
-    font-size: 25px;
-    font-style: italic;
-}
-
-header .logo_container img{
-    height: 55px;
-    width: auto;
-    margin: 10px;
-}
-
-.nav-links{
-    list-style: none;
-}
-
-.nav-links li{
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav-links a{
-    font-size: 20px;
-    text-decoration: none;
-    color: #000;
-}
-
-/* Inicio */
-main{
+/* MAIN DEL INICIO*/
+#main_inicio{
     background-color: #008B8B;
-}
-
-.inicio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,3 +36,43 @@ main{
     opacity: .8;
 }
 
+/* FOOTER */
+
+#inicio_footer{
+    grid-area:footer;
+    background-color: #20B2AA;
+    height: 50px;
+}
+
+.icons-container ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons-container ul li{
+    margin-top: 13px;
+    text-decoration: none;
+    list-style:none;
+}
+
+.icons-container ul li a{
+    color:#000;
+}
+.responsive{
+    display: none;
+}
+
+@media (max-width:480px){
+    /* FOOTER */
+    .responsive_footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .icons-container{
+        display: none;
+    }
+}
