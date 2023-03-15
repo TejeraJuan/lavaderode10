@@ -1,0 +1,22 @@
+@use 'variables';
+
+/* FOOTER */
+#footer {
+	background-color: variables.$color-secundario;
+	height: 50px;
+}
+.icons-container {
+	ul {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		li {
+			margin-top: 13px;
+			text-decoration: none;
+			list-style: none;
+		}
+	}
+}
+.responsive_footer{
+	display: none;
+}

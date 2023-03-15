@@ -1,0 +1,29 @@
+@use 'variables';
+
+/* UBICACION */
+#main-ubicacion {
+	height: 100vh;
+}
+.ubicacion-container {
+	background-color: variables.$bg-color_main;
+	display: flex;
+	justify-content: start;
+	height: 100%;
+}
+.ubicacion-mapa {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	iframe {
+		height: 400px;
+		width: 400px;
+	}
+}
+.ubicacion-direccion {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+}

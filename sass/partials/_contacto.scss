@@ -1,0 +1,53 @@
+@use 'variables';
+
+/* CONTACTO */
+#main-contacto {
+	height: 100vh;
+	width: 100%;
+	background-color: variables.$bg-color_main;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-container {
+	height: 500px;
+	width: 500px;
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h3 {
+		text-align: center;
+		height: 25%;
+		margin-top: 35px;
+	}
+}
+.nombre {
+	height: 150px;
+	input {
+		width: 450px;
+	}
+	label {
+		display: block;
+	}
+}
+.mail {
+	height: 150px;
+	input {
+		width: 450px;
+	}
+	label {
+		display: block;
+	}
+}
+.consulta {
+	height: 150px;
+	margin-left: 25px;
+	textarea {
+		min-height: 75px;
+		width: 450px;
+	}
+	label {
+		display: block;
+	}
+}
