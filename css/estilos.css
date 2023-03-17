@@ -41,7 +41,9 @@ header {
 .text-container {
   width: 500px;
   text-align: center;
-  margin-top: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .text-container h1 {
   font-size: 55px;
