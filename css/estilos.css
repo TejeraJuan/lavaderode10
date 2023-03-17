@@ -79,7 +79,6 @@ header {
 
 .ubicacion-mapa {
   width: 50%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,8 +238,14 @@ header {
 }
 
 @media (max-width: 768px) {
+  #main_inicio {
+    height: 100%;
+  }
   .s_logo-container {
     display: none;
+  }
+  .text-container {
+    margin: 50px;
   }
   .nav-item {
     text-align: center;
@@ -261,10 +266,13 @@ header {
   .icons-container {
     display: none;
   }
+  #main-ubicacion {
+    height: 100%;
+  }
   .ubicacion-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
   .ubicacion-mapa {
@@ -273,6 +281,7 @@ header {
     align-items: center;
     width: 100%;
     height: 100%;
+    margin: 25px 0px;
   }
   .ubicacion-mapa iframe {
     height: 350px;
@@ -280,8 +289,12 @@ header {
   }
   .ubicacion-direccion {
     display: flex;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #main-sobreNosotros {
+    height: 100%;
   }
   #main-servicios {
     height: 100%;
@@ -299,7 +312,11 @@ header {
     height: 200px;
     width: 200px;
   }
+  #main-contacto {
+    height: 100%;
+  }
   .form-container {
+    margin: 50px;
     width: 300px;
     height: 500px;
   }
