@@ -153,8 +153,8 @@ header {
   align-items: center;
 }
 .servicios-container article img {
-  height: 175px;
-  width: 175px;
+  height: 250px;
+  width: 250px;
   display: block;
 }
 .servicios-container article span {
@@ -283,16 +283,21 @@ header {
     justify-content: start;
     align-items: start;
   }
+  #main-servicios {
+    height: 100%;
+  }
   .servicios-container {
     display: grid;
     grid-template-columns: auto;
+    height: 100%;
   }
   .servicios-container article {
     width: 100%;
+    margin: 15px 0;
   }
   .servicios-container article img {
-    height: 130px;
-    width: 130px;
+    height: 200px;
+    width: 200px;
   }
   .form-container {
     width: 300px;
